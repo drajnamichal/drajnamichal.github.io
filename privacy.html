@@ -14,7 +14,7 @@
   <p class="muted">Platné od 18. novembra 2026 · <a href="#english">English version below</a></p>
 
   <div class="card">
-    <p><strong>Stručne:</strong> appka Objednávky nemá žiadny server. Všetky údaje ostávajú vo vašom telefóne. Ak pripojíte Gmail, appka v ňom len číta e-maily o objednávkach – nič neposiela, nemení ani nemaže a obsah e-mailov nikomu neposkytuje.</p>
+    <p><strong>Stručne:</strong> appka Objednávky nemá žiadny server. Všetky údaje ostávajú vo vašom telefóne. Ak pripojíte Gmail alebo iCloud Mail, appka v ňom len číta e-maily o objednávkach – nič neposiela, nemení ani nemaže a obsah e-mailov nikomu neposkytuje.</p>
   </div>
 
   <h2>Aké údaje appka spracúva</h2>
@@ -23,7 +23,7 @@
     <li><strong>Fotky a naskenované doklady</strong>, ktoré k objednávke pridáte (fotoaparát, knižnica fotiek, skener dokumentov).</li>
     <li><strong>Text zo screenshotov a skopírovaného textu</strong> – rozpoznáva sa priamo v telefóne (Apple Vision), nikam sa neposiela.</li>
     <li><strong>Vaše meno, adresa a IBAN</strong>, ak ich vyplníte pre list na odstúpenie od zmluvy alebo reklamáciu. Použijú sa len v texte listu, ktorý sami odošlete.</li>
-    <li><strong>E-maily z Gmailu</strong> – len ak Gmail pripojíte (pozri nižšie).</li>
+    <li><strong>E-maily z Gmailu alebo iCloud Mailu</strong> – len ak schránku pripojíte (pozri nižšie).</li>
   </ul>
 
   <h2>Gmail</h2>
@@ -39,6 +39,15 @@
   <h3>Obmedzené použitie údajov z Google</h3>
   <p>Používanie a prenos informácií získaných z Google API do inej aplikácie sa riadi <a href="https://developers.google.com/terms/api-services-user-data-policy">Zásadami používania údajov používateľov služieb Google API</a> vrátane požiadaviek na obmedzené použitie (Limited Use). Údaje z Gmailu sa nepoužívajú na reklamu, nepredávajú sa, neprenášajú sa tretím stranám a nepoužívajú sa na trénovanie modelov umelej inteligencie.</p>
 
+  <h2>iCloud Mail</h2>
+  <p>Pripojenie iCloud Mailu je nepovinné. Apple neponúka prihlásenie na čítanie pošty cez svoj účet, preto appka používa štandardný protokol IMAP (<code>imap.mail.me.com</code>, šifrované spojenie) a heslo pre appku, ktoré si vytvoríte na <a href="https://account.apple.com">account.apple.com</a>. Nie je to heslo k vášmu Apple účtu.</p>
+  <ul>
+    <li>Heslo pre appku a e-mailová adresa sú uložené len v telefóne (heslo v Keychaine).</li>
+    <li>Schránka Doručené sa otvára len na čítanie; appka neposiela e-maily, nič nepresúva, nemaže ani neoznačuje ako prečítané.</li>
+    <li>Appka si stiahne predmety správ za posledných 14 dní a celý obsah len tých, ktoré sa týkajú objednávky alebo zásielky. Ďalej s nimi zaobchádza rovnako ako s e-mailmi z Gmailu vyššie.</li>
+    <li>Prístup zrušíte v appke (Nastavenia → Objednávky z e-mailu → Odpojiť iCloud Mail) alebo zrušením hesla pre appku na account.apple.com.</li>
+  </ul>
+
   <h2>Kde sú údaje uložené</h2>
   <ul>
     <li>V databáze appky v telefóne.</li>
@@ -48,11 +57,12 @@
   <p>Autor appky k vašim údajom nemá prístup. Appka neobsahuje analytiku, sledovanie ani reklamu a nemá vlastný server.</p>
 
   <h2>Komu sa údaje poskytujú</h2>
-  <p>Nikomu. Appka komunikuje len so službami Google, aby vás prihlásila a prečítala e-maily z vášho Gmailu, a to len keď ho pripojíte.</p>
+  <p>Nikomu. Appka komunikuje len so službami Google (prihlásenie a čítanie Gmailu) a s poštovým serverom iCloud (čítanie iCloud Mailu), a to len keď danú schránku pripojíte.</p>
 
   <h2>Ako údaje vymazať</h2>
   <ul>
-    <li><strong>Odpojiť Gmail:</strong> Nastavenia → Objednávky z Gmailu → Odpojiť Gmail. Appka zruší prístup aj u Google. Prístup môžete kedykoľvek zrušiť aj na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Odpojiť Gmail:</strong> Nastavenia → Objednávky z e-mailu → Odpojiť Gmail. Appka zruší prístup aj u Google. Prístup môžete kedykoľvek zrušiť aj na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Odpojiť iCloud Mail:</strong> Nastavenia → Objednávky z e-mailu → Odpojiť iCloud Mail. Heslo pre appku sa z telefónu vymaže; zrušte ho aj na <a href="https://account.apple.com">account.apple.com</a>.</li>
     <li><strong>Zmazať objednávku:</strong> v detaile objednávky alebo potiahnutím riadku v zozname. Zmažú sa aj jej fotky a doklady.</li>
     <li><strong>Zmazať všetko:</strong> odinštalujte appku. Ak ste si zálohu presunuli inam, zmažte aj ju.</li>
   </ul>
@@ -72,7 +82,7 @@
   <p class="muted">Effective November 18, 2026</p>
 
   <div class="card">
-    <p><strong>In short:</strong> the Objednávky app has no server. All data stays on your phone. If you connect Gmail, the app only reads order-related emails – it never sends, changes or deletes anything and never shares email content with anyone.</p>
+    <p><strong>In short:</strong> the Objednávky app has no server. All data stays on your phone. If you connect Gmail or iCloud Mail, the app only reads order-related emails – it never sends, changes or deletes anything and never shares email content with anyone.</p>
   </div>
 
   <h2>Data the app processes</h2>
@@ -81,7 +91,7 @@
     <li><strong>Photos and scanned documents</strong> you attach to an order (camera, photo library, document scanner).</li>
     <li><strong>Text from screenshots and pasted text</strong> – recognized on the device (Apple Vision), never uploaded.</li>
     <li><strong>Your name, address and IBAN</strong>, if you fill them in for a withdrawal or warranty-claim letter. They are only used in the letter text that you send yourself.</li>
-    <li><strong>Gmail messages</strong> – only if you connect Gmail (see below).</li>
+    <li><strong>Gmail or iCloud Mail messages</strong> – only if you connect the mailbox (see below).</li>
   </ul>
 
   <h2>Gmail</h2>
@@ -97,6 +107,15 @@
   <h3>Limited Use of Google user data</h3>
   <p>The app's use and transfer of information received from Google APIs to any other app adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is not used for advertising, is not sold, is not transferred to third parties and is not used to train AI models.</p>
 
+  <h2>iCloud Mail</h2>
+  <p>Connecting iCloud Mail is optional. Apple does not offer account sign-in for reading mail, so the app uses the standard IMAP protocol (<code>imap.mail.me.com</code>, encrypted connection) with an app-specific password you create at <a href="https://account.apple.com">account.apple.com</a>. It is not your Apple Account password.</p>
+  <ul>
+    <li>The app-specific password and email address are stored only on the phone (the password in the Keychain).</li>
+    <li>The Inbox is opened read-only; the app never sends email, moves, deletes or marks anything as read.</li>
+    <li>The app downloads subjects from the last 14 days and the full content only of messages about an order or shipment, then handles them exactly like Gmail messages above.</li>
+    <li>Revoke access in the app (Settings → Objednávky z e-mailu → Odpojiť iCloud Mail) or by revoking the app-specific password at account.apple.com.</li>
+  </ul>
+
   <h2>Where data is stored</h2>
   <ul>
     <li>In the app's database on your phone.</li>
@@ -106,11 +125,12 @@
   <p>The developer has no access to your data. The app contains no analytics, tracking or advertising and has no server of its own.</p>
 
   <h2>Sharing</h2>
-  <p>None. The app only talks to Google services to sign you in and read emails from your Gmail, and only when you connect it.</p>
+  <p>None. The app only talks to Google services (sign-in and reading Gmail) and to the iCloud mail server (reading iCloud Mail), and only when you connect that mailbox.</p>
 
   <h2>Deleting data</h2>
   <ul>
-    <li><strong>Disconnect Gmail:</strong> Settings (Nastavenia) → Objednávky z Gmailu → Odpojiť Gmail (Disconnect). The app also revokes access at Google. You can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Disconnect Gmail:</strong> Settings (Nastavenia) → Objednávky z e-mailu → Odpojiť Gmail (Disconnect). The app also revokes access at Google. You can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Disconnect iCloud Mail:</strong> Settings (Nastavenia) → Objednávky z e-mailu → Odpojiť iCloud Mail. The app-specific password is removed from the phone; revoke it at <a href="https://account.apple.com">account.apple.com</a> as well.</li>
     <li><strong>Delete an order:</strong> from the order detail or by swiping the row in the list. Its photos and documents are deleted too.</li>
     <li><strong>Delete everything:</strong> uninstall the app. If you moved the backup file elsewhere, delete it as well.</li>
   </ul>
