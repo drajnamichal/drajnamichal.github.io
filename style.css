@@ -1,0 +1,89 @@
+:root {
+  --bg: #f2f2f7;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6e6e73;
+  --accent: #4f54de;
+  --line: #e5e5ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --card: #1c1c1e;
+    --text: #f2f2f7;
+    --muted: #a1a1a6;
+    --accent: #9499ff;
+    --line: #2c2c2e;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header.hero {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+
+header.hero img {
+  width: 112px;
+  height: 112px;
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(79, 84, 222, 0.25);
+}
+
+h1 { font-size: 34px; line-height: 1.15; margin: 20px 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 22px; margin: 32px 0 8px; letter-spacing: -0.01em; }
+h3 { font-size: 18px; margin: 20px 0 4px; }
+
+p.lead { color: var(--muted); font-size: 19px; margin: 0 auto; max-width: 520px; }
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.features { display: grid; gap: 12px; margin-top: 28px; }
+.feature { display: flex; gap: 14px; align-items: flex-start; }
+.feature .dot {
+  flex: none;
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  font-size: 20px;
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+.feature strong { display: block; }
+.feature span { color: var(--muted); font-size: 15px; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+
+.muted { color: var(--muted); font-size: 15px; }
+
+nav.links { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: center; margin-top: 32px; }
+
+footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 14px; }
+
+hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+
+.back { display: inline-block; margin-bottom: 8px; font-size: 15px; }
