@@ -56,6 +56,9 @@
     <li>Vypnúť to môžete v Nastaveniach → Logá obchodov. Tam sa dajú stiahnuté logá aj vymazať; namiesto loga sa potom ukáže iniciála obchodu.</li>
   </ul>
 
+  <h2>Kurz meny</h2>
+  <p>Ak máte objednávky v eurách aj v inej mene (napr. v korunách), appka pri súčte ukáže orientačnú sumu v eurách. Kurz si stiahne z verejných referenčných kurzov Európskej centrálnej banky (<code>https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml</code>), najviac raz za 12 hodín a len vtedy, keď máte objednávku v inej mene ako euro. Je to bežné stiahnutie verejného súboru – ECB nedostane nič o vás ani o vašich objednávkach (vidí len bežný prístup z telefónu). Kurz sa uloží v telefóne.</p>
+
   <h2>Kde sú údaje uložené</h2>
   <ul>
     <li>V databáze appky v telefóne.</li>
@@ -65,7 +68,7 @@
   <p>Autor appky k vašim údajom nemá prístup. Appka neobsahuje analytiku, sledovanie ani reklamu a nemá vlastný server.</p>
 
   <h2>Komu sa údaje poskytujú</h2>
-  <p>Nikomu. Appka komunikuje len so službami Google (prihlásenie a čítanie Gmailu) a s poštovým serverom iCloud (čítanie iCloud Mailu), a to len keď danú schránku pripojíte. Ak sú zapnuté logá obchodov, stiahne aj logo zo stránky obchodu, z ktorého máte objednávku (pozri vyššie).</p>
+  <p>Nikomu. Appka komunikuje len so službami Google (prihlásenie a čítanie Gmailu) a s poštovým serverom iCloud (čítanie iCloud Mailu), a to len keď danú schránku pripojíte. Ak sú zapnuté logá obchodov, stiahne aj logo zo stránky obchodu, z ktorého máte objednávku (pozri vyššie). Pri objednávkach v inej mene stiahne aj verejný kurz z Európskej centrálnej banky.</p>
 
   <h2>Ako údaje vymazať</h2>
   <ul>
@@ -132,6 +135,9 @@
     <li>You can turn this off in Settings (Nastavenia) → Logá obchodov, where downloaded logos can also be deleted; the shop's initial is shown instead.</li>
   </ul>
 
+  <h2>Exchange rate</h2>
+  <p>If you have orders in euros and in another currency (e.g. Czech koruna), the app shows an approximate total in euros. It downloads the public euro foreign exchange reference rates of the European Central Bank (<code>https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml</code>), at most once every 12 hours and only when you have an order in a currency other than the euro. This is an ordinary download of a public file – the ECB receives nothing about you or your orders (it only sees an ordinary request from the phone). The rate is stored on the phone.</p>
+
   <h2>Where data is stored</h2>
   <ul>
     <li>In the app's database on your phone.</li>
@@ -141,7 +147,7 @@
   <p>The developer has no access to your data. The app contains no analytics, tracking or advertising and has no server of its own.</p>
 
   <h2>Sharing</h2>
-  <p>None. The app only talks to Google services (sign-in and reading Gmail) and to the iCloud mail server (reading iCloud Mail), and only when you connect that mailbox. With shop logos turned on, it also downloads the logo from the website of a shop you ordered from (see above).</p>
+  <p>None. The app only talks to Google services (sign-in and reading Gmail) and to the iCloud mail server (reading iCloud Mail), and only when you connect that mailbox. With shop logos turned on, it also downloads the logo from the website of a shop you ordered from (see above). For orders in another currency it also downloads the public exchange rate from the European Central Bank.</p>
 
   <h2>Deleting data</h2>
   <ul>
